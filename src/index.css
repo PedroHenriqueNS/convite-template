@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: FleurDeLeah;
+  src: url('./assets/fonts/FleurDeLeah-Regular.ttf');
+}
+@font-face {
+  font-family: DrSugiyama;
+  src: url('./assets/fonts/DrSugiyama-Regular.ttf');
+}
+@font-face {
+  font-family: DongleBold;
+  src: url('./assets/fonts/Dongle-Bold.ttf');
+}
+@font-face {
+  font-family: DongleLight;
+  src: url('./assets/fonts/Dongle-Light.ttf');
+}
+@font-face {
+  font-family: DongleRegular;
+  src: url('./assets/fonts/Dongle-Regular.ttf');
+}
