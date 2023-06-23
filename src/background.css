@@ -1,0 +1,22 @@
+.snowContainer {
+    display: flex;
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.snowflakeTop {
+    position: absolute;
+
+    width: 0;
+    height: 0;
+    border: 1px solid white;
+    box-shadow: 0 0 15px 0.5px rgba(255, 255, 255, 1);
+}
+
+@keyframes snowflake-fall {
+    100% {
+        transform: translate(0, +20vh);
+    }
+}
