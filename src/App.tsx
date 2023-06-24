@@ -53,16 +53,22 @@ function App() {
             <p className='subTitle' style={{ height: '20px' }}>Cidade e Estado</p>
           </div>
 
-          <div className='dataInfos' style={{ gap: '15px', }}>
-            <div style={{ display: 'flex', gap: '5px', alignItems: 'center', justifyContent: 'center' }}>
-              <ImLocation size={20} />
+          <div className='dataInfos' style={{ gap: '25px', }}>
+            <a
+                className='botao'
+                href="https://goo.gl/maps/jP4jh3k9VJ5o9zeS8"
+            >
+              <ImLocation size={18} color={"white"} />
               <p className='subTitle'>Local</p>
-            </div>
+            </a>
 
-            <div style={{ display: 'flex', gap: '5px', alignItems: 'center', justifyContent: 'center' }}>
-              <BsWhatsapp size={20} />
+            <a
+                className='botao'
+                onClick={() => alert("Presença confirmada!!!")}
+            >
+              <BsWhatsapp size={18} color={"white"} />
               <p className='subTitle'>Confirmar Presença</p>
-            </div>
+            </a>
           </div>
 
           <h2 className='lastText'>Conto com a sua presença</h2>
