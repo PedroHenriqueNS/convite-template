@@ -1,24 +1,10 @@
 import './App.css';
 import './background.css'
 import React from 'react';
-import SnowGlow from "./assets/snowglow.mp4";
 import { ImLocation } from 'react-icons/im'
 import { BsWhatsapp } from 'react-icons/bs'
 
 function App() {
-    const snowFlakesCount: number = 1000
-
-    /*const snowFlakes = () => {
-      // let elements = []
-      //
-      // for (let i = 0; i < snowFlakesCount; i++) {
-      //   elements.push(
-      //     <div className='snowflakeTop' style={{ left: Math.floor(Math.random() * 100) + 'vw', top: Math.floor(Math.random() * 25) + 'vh' }} />
-      //   )
-      //
-      // }
-      // return elements
-    }*/
 
     return (
         <div className="App">
@@ -37,7 +23,7 @@ function App() {
                     transition: 'all 1s linear'
                 }}
             >
-                <source src={SnowGlow} type="video/mp4" />
+                <source src='https://raw.githubusercontent.com/PedroHenriqueNS/convite-template/master/src/assets/snowglow.mp4' type="video/mp4" />
             </video>
 
             <main>
