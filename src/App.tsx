@@ -3,12 +3,15 @@ import './background.css'
 import React from 'react';
 import { ImLocation } from 'react-icons/im'
 import { BsWhatsapp } from 'react-icons/bs'
+import ReactPlayer from 'react-player/lazy';
+
+
 
 function App() {
 
     return (
         <div className="App">
-            <video
+            {/* <video
                 autoFocus
                 autoPlay
                 loop
@@ -24,11 +27,31 @@ function App() {
                 }}
             >
                 <source src='https://raw.githubusercontent.com/PedroHenriqueNS/convite-template/master/src/assets/snowglow.mp4' type="video/mp4" />
-            </video>
+            </video> */}
+            <ReactPlayer
+                url="https://raw.githubusercontent.com/PedroHenriqueNS/convite-template/master/src/assets/snowglow.mp4"
+
+                loop
+                muted
+                playing={true}
+
+                width="100%"
+                height="100%"
+
+                style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    transition: 'all 1s linear'
+                }}
+            />
 
             <main>
-                <h1 className='nameTitle'>Manuelle</h1>
-                <h2 className='age'>17 anos</h2>
+                <h1 className='nameTitle'>Jhulia</h1>
+                <h2 className='age'>19 anos</h2>
                 <p className='subTitle'>Venha comemorar comigo!</p>
                 <div className='dataInfos'>
                     <div style={{ display: 'block' }}>
