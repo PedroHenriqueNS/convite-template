@@ -10,29 +10,23 @@ import { Button } from '@mui/material';
 
 function App() {
 
+    const params = new URLSearchParams(window.location.search);
     var url = 'https://raw.githubusercontent.com/PedroHenriqueNS/convite-template/master/src/assets/snowglow.mp4'
+    var nomeExists = false
+    var nome
 
     if (window.innerWidth >= 600) url = 'https://raw.githubusercontent.com/PedroHenriqueNS/convite-template/master/src/assets/snowglowRectangular.mp4'
 
+    if (params.get("nome")) {
+        nome = params.get("nome")
+        nomeExists = true
+    }
+
+    console.log(nomeExists, nome);
+    
+
     return (
         <div className="App">
-            {/* <video
-                autoFocus
-                autoPlay
-                loop
-                muted
-                style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                    transition: 'all 1s linear'
-                }}
-            >
-                <source src='https://raw.githubusercontent.com/PedroHenriqueNS/convite-template/master/src/assets/snowglow.mp4' type="video/mp4" />
-            </video> */}
             <ReactPlayer
                 url={url}
 
@@ -135,7 +129,7 @@ function App() {
                     </Button>
                 </div>
 
-                <h2 className='lastText'>Conto com a sua presença!</h2>
+                <h2 className='lastText'>Conto com a sua presença, {nome}!</h2>
             </main >
         </div >
     );
