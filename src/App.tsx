@@ -10,6 +10,10 @@ import { Button } from '@mui/material';
 
 function App() {
 
+    var url = 'https://raw.githubusercontent.com/PedroHenriqueNS/convite-template/master/src/assets/snowglow.mp4'
+
+    if (window.innerWidth >= 600) url = 'https://raw.githubusercontent.com/PedroHenriqueNS/convite-template/master/src/assets/snowglowRectangular.mp4'
+
     return (
         <div className="App">
             {/* <video
@@ -30,7 +34,7 @@ function App() {
                 <source src='https://raw.githubusercontent.com/PedroHenriqueNS/convite-template/master/src/assets/snowglow.mp4' type="video/mp4" />
             </video> */}
             <ReactPlayer
-                url="https://raw.githubusercontent.com/PedroHenriqueNS/convite-template/master/src/assets/snowglow.mp4"
+                url={url}
 
                 loop
                 muted
@@ -77,14 +81,14 @@ function App() {
                     alignItems: 'center',
                     justifyContent: 'center'
                 }}>
-                    <p className='subTitle' style={{ height: '20px' }}>Rua da Alegria, 123</p>
-                    <p className='subTitle' style={{ height: '20px' }}>Cidade e Estado</p>
+                    <p className='subTitle' style={{ height: '20px' }}>Rua Jaú, 71</p>
+                    <p className='subTitle' style={{ height: '20px' }}>Cidade Ariston, Carapicuíba -SP</p>
                 </div>
 
                 <div className='dataInfos' style={{ gap: '25px', }}>
                     <Button
                         variant="text"
-                        href="https://goo.gl/maps/jP4jh3k9VJ5o9zeS8"
+                        href="https://goo.gl/maps/MUGPo8votprim3Uv8"
 
                         sx={{
                             all: 'unset',
