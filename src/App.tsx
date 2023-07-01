@@ -122,6 +122,7 @@ function App() {
                             paddingBottom: '3px',
                             borderRadius: '10px',
                             gap: '5px',
+                            cursor: 'pointer',
                             ":hover": { background: 'rgb(51, 51, 51, 0.6)' }
                         }}
                     >
