@@ -51,23 +51,23 @@ function App() {
 
             <main>
                 <h1 className='nameTitle'>Jhulia</h1>
-                <h2 className='age'>19 anos</h2>
+                <h2 className='age'>20  anos</h2>
                 <p className='subTitle'>Venha comemorar comigo!</p>
                 <div className='dataInfos'>
                     <div style={{ display: 'block' }}>
-                        <p className='dataText'>SETEMBRO</p>
-                        <p className='dataText'>2022</p>
+                        <p className='dataText'>AGOSTO</p>
+                        <p className='dataText'>2023</p>
                     </div>
 
                     <div className='verticalBar' />
 
-                    <p className='dataText' style={{ fontSize: '28px' }}>10</p>
+                    <p className='dataText' style={{ fontSize: '28px' }}>12</p>
 
                     <div className='verticalBar' />
 
                     <div style={{ display: 'block' }}>
                         <p className='dataText'>SÁBADO</p>
-                        <p className='dataText'>18:00</p>
+                        <p className='dataText'>19:00</p>
                     </div>
                 </div>
 
@@ -108,7 +108,7 @@ function App() {
 
                     <Button
                         variant="text"
-                        onClick={() => alert("Presença confirmada!!!")}
+                        href="https://wa.me/+5511968025892?text=Pode confirmar a minha presença!!! :D"
 
                         sx={{
                             all: 'unset',
