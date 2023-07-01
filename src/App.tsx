@@ -4,6 +4,7 @@ import React from 'react';
 import { ImLocation } from 'react-icons/im'
 import { BsWhatsapp } from 'react-icons/bs'
 import ReactPlayer from 'react-player/lazy';
+import { Button } from '@mui/material';
 
 
 
@@ -81,26 +82,57 @@ function App() {
                 </div>
 
                 <div className='dataInfos' style={{ gap: '25px', }}>
-                    <a
-                        className='botao'
+                    <Button
+                        variant="text"
                         href="https://goo.gl/maps/jP4jh3k9VJ5o9zeS8"
+
+                        sx={{
+                            all: 'unset',
+
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+
+                            padding: '8px',
+                            paddingTop: '4px',
+                            paddingBottom: '3px',
+                            borderRadius: '10px',
+                            gap: '5px',
+                            cursor: 'pointer',
+                            ":hover": { background: 'rgb(51, 51, 51, 0.6)' }
+                        }}
                     >
                         <ImLocation size={18} color={"pink"} />
-                        <p className='subTitle'>Local</p>
-                    </a>
+                        <p className='subTitle' style={{ cursor: 'pointer' }}>Local</p>
+                    </Button>
 
-                    <a
-                        className='botao'
+                    <Button
+                        variant="text"
                         onClick={() => alert("Presença confirmada!!!")}
+
+                        sx={{
+                            all: 'unset',
+
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+
+                            padding: '8px',
+                            paddingTop: '4px',
+                            paddingBottom: '3px',
+                            borderRadius: '10px',
+                            gap: '5px',
+                            ":hover": { background: 'rgb(51, 51, 51, 0.6)' }
+                        }}
                     >
                         <BsWhatsapp size={18} color={"pink"} />
-                        <p className='subTitle'>Confirmar Presença</p>
-                    </a>
+                        <p className='subTitle' style={{ cursor: 'pointer' }}>Confirmar Presença</p>
+                    </Button>
                 </div>
 
                 <h2 className='lastText'>Conto com a sua presença!</h2>
-            </main>
-        </div>
+            </main >
+        </div >
     );
 }
 
