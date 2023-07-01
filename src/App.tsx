@@ -22,9 +22,6 @@ function App() {
         nomeExists = true
     }
 
-    console.log(nomeExists, nome);
-    
-
     return (
         <div className="App">
             <ReactPlayer
@@ -129,7 +126,11 @@ function App() {
                     </Button>
                 </div>
 
-                <h2 className='lastText'>Conto com a sua presença, {nome}!</h2>
+                {nomeExists ?
+                    <h2 className='lastText'>Conto com a sua presença, {nome}!</h2>
+                    :
+                    <h2 className='lastText'>Conto com a sua presença!</h2>
+                }
             </main >
         </div >
     );
