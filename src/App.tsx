@@ -85,7 +85,7 @@ function App() {
                         className='botao'
                         href="https://goo.gl/maps/jP4jh3k9VJ5o9zeS8"
                     >
-                        <ImLocation size={18} color={"white"} />
+                        <ImLocation size={18} color={"pink"} />
                         <p className='subTitle'>Local</p>
                     </a>
 
@@ -93,12 +93,12 @@ function App() {
                         className='botao'
                         onClick={() => alert("Presença confirmada!!!")}
                     >
-                        <BsWhatsapp size={18} color={"white"} />
+                        <BsWhatsapp size={18} color={"pink"} />
                         <p className='subTitle'>Confirmar Presença</p>
                     </a>
                 </div>
 
-                <h2 className='lastText'>Conto com a sua presença</h2>
+                <h2 className='lastText'>Conto com a sua presença!</h2>
             </main>
         </div>
     );

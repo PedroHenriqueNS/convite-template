@@ -18,7 +18,11 @@ main {
   margin: 20px;
   padding: 20px;
 
-  border: 5px solid white;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 4px;
+  border-image-source: linear-gradient(to bottom, rgba(255, 166, 0, 0.7), rgba(255, 217, 0, 0.7));
+
   z-index: 1;
 
   gap: 0;
@@ -34,7 +38,8 @@ video {
 .nameTitle {
   font-family: FleurDeLeah;
   font-size: 60px;
-  color: white;
+  color: rgb(255, 213, 220);
+  text-shadow: 0px 0px 30px black;
 
   margin: 0;
   padding: 0;
@@ -43,7 +48,7 @@ video {
 .subTitle {
   font-family: DongleRegular;
   font-size: 20px;
-  color: white;
+  color: rgb(255, 238, 241);
   opacity: 0.7;
 
   margin: 0;
@@ -53,7 +58,8 @@ video {
 .age {
   font-family: FleurDeLeah;
   font-size: 45px;
-  color: white;
+  color: rgb(255, 213, 220);
+  text-shadow: 0px 0px 30px black;
 
   margin: 0;
   padding: 0;
@@ -73,7 +79,7 @@ video {
 .verticalBar {
   height: 75%;
   width: 0;
-  border-right: 3px solid white;
+  border-right: 3px solid pink;
   border-radius: 10px;
 
   margin: 0;
@@ -81,7 +87,8 @@ video {
 }
 
 .dataText {
-  color: white;
+  color: pink;
+  text-shadow: 0px 0px 30px black;
 
   margin: 0;
   padding: 0;
@@ -90,7 +97,8 @@ video {
 .lastText {
   font-family: DrSugiyama;
   font-size: 28px;
-  color: white;
+  color: rgb(255, 213, 220);
+  text-shadow: 0px 0px 30px black;
 
   margin: 0;
   padding: 0;
